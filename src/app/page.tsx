@@ -1,19 +1,22 @@
-import { Button } from '@/components/ui/button'
-import { SignedIn, SignedOut, SignIn, SignInButton, SignOutButton, SignUpButton } from '@clerk/nextjs'
-import React from 'react'
+import Header from '@/components/landing/Header'
+import Hero from '@/components/landing/Hero'
+import HowItWorks from '@/components/landing/HowItWorks'
+import WhatToAsk from '@/components/landing/WhatToAsk'
+import PricingSection from '@/components/landing/PricingSection'
+import CTA from '@/components/landing/CTA'
+import Footer from '@/components/landing/Footer'
+
 
 const page = () => {
   return (
-    <div>
-      <h1>Home Page</h1>
-      <SignedOut>
-        <SignUpButton mode="modal">Sign up</SignUpButton>
-      </SignedOut>
-      
-      <SignedIn>
-        <SignOutButton>Sign out</SignOutButton>
-      </SignedIn>
-
+    <div className='min-h-screen bg-background'>
+     <Header/>
+     <Hero/>
+     <HowItWorks/>
+     <WhatToAsk/>
+     <PricingSection/>
+     <CTA />
+     <Footer/>
     </div>
   )
 }
