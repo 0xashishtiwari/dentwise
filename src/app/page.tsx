@@ -12,21 +12,23 @@ import { redirect } from 'next/navigation'
 const page = async () => {
 
   const user = await currentUser()
-
   //redirect authenticated users to dashboard
-  if(user){
+  if (user) {
     redirect('/dashboard')
   }
+ 
+
+
 
   return (
     <div className='min-h-screen bg-background'>
-     <Header/>
-     <Hero/>
-     <HowItWorks/>
-     <WhatToAsk/>
-     <PricingSection/>
-     <CTA />
-     <Footer/>
+      <Header />
+      <Hero />
+      <HowItWorks />
+      <WhatToAsk />
+      <PricingSection />
+      <CTA />
+      <Footer />
     </div>
   )
 }
