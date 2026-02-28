@@ -75,7 +75,5 @@ enum Gender {
 
 enum AppointmentStatus {
   CONFIRMED
-  SCHEDULED
   COMPLETED
-  CANCELLED
 }
